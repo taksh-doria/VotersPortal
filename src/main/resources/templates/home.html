@@ -33,21 +33,17 @@
             <div class="row">
                 <div class="col-sm-10 offset-sm-1">
                     <h1 class="display-3">Welcome to e-Voting Portal</h1>
-                    <div id="network" class="form-text"></div>
                     <div class="info-form">
-                        <form>
+                        <form id="frm1" method="POST" action="/login">
                             <div class="mb-3">
                                 <label for="hash" class="form-label">Voter Hash</label>
-                                <input type="text" class="form-control" id="hash" aria-describedby="emailHelp">
+                                <input type="text" class="form-control" id="hash" name="hash" aria-describedby="emailHelp">
                                 <div id="hashHelp" class="form-text">Never share your private key with anyone else.</div>
                             </div>
-                            <div class="mb-3">
-                                <label for="hash" class="form-label">Voter Hash</label>
-                                <input type="datetime-local" class="form-control" id="dob" aria-describedby="emailHelp">
-                            </div>
-                            <button type="submit" class="btn btn-primary">Login</button>
+                            <input type="submit" name="submit" value="Login" class="btn btn-primary">
                         </form>
                     </div>
+                    <div id="network" class="form-text" style="color: mediumspringgreen"></div>
                     <br>
                 </div>
             </div>
