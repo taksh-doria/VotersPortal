@@ -57,10 +57,15 @@ public class HomeController {
     public ModelAndView performVoting(HttpServletRequest request)
     {
         HttpSession session=request.getSession();
-        Voter voter=repo.findVoter((String) session.getAttribute("user_hash"));
         ModelAndView modelAndView=new ModelAndView();
-        modelAndView.setViewName("vote");
-        modelAndView.addObject("voter_detail",voter);
-        return  modelAndView;
+        if(session.getAttribute("user_hash")!=null)
+        {
+            Voter voter=repo.findVoter((String)session.getAttribute("user_hash") );
+            modelAndView.setViewName("vote");
+            modelAndView.addObject("voter_detail",voter);
+            return  modelAndView;
+        }
+        modelAndView.setViewName("home");
+        return modelAndView;
     }
 }
