@@ -55,7 +55,7 @@
                             <div class="col-sm-3">
                                 <h6 class="mb-0">Voter Hash</h6>
                             </div>
-                            <div class="col-sm-9 text-secondary" th:text="${voter_detail.getHash()}">
+                            <div class="col-sm-9 text-secondary" id="hash" th:text="${voter_detail.getHash()}">
                             </div>
                         </div>
                         <hr>
@@ -88,8 +88,8 @@
                             <div class="col-sm-3">
                                 <h6 class="mb-0">Address</h6>
                             </div>
-                            <div class="col-sm-9 text-secondary" th:text="${voter_detail.getAddress()}">
-                            </div>
+                            <div class="col-sm-9 text-secondary" th:text="${voter_detail.getAddress()}"></div>
+                        </div>
                         </div>
                         <hr>
                     </div>
@@ -102,6 +102,10 @@
                             <div id="candidates">
                                 <div class="progress-bar bg-primary" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
+                            <div id="voted" class="alert alert-danger" style="color: crimson"></div>
+                            <br>
+                            <div id="network" class="alert alert-success" style="color: mediumspringgreen"></div>
+                            <br>
                         </div>
                     </div>
                 </div>
