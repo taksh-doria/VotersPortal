@@ -68,4 +68,20 @@ public class HomeController {
         modelAndView.setViewName("home");
         return modelAndView;
     }
+
+    @GetMapping("/logout")
+    public void logout(HttpServletRequest request,HttpServletResponse response)
+    {
+        try {
+            HttpSession session = request.getSession();
+            if (session.getAttribute("user_hash") != null) {
+                session.removeAttribute("user_hash");
+                RequestDispatcher dispatcher = request.getRequestDispatcher("/home");
+                dispatcher.forward(request, response);
+            }
+            RequestDispatcher dispatcher = request.getRequestDispatcher("/home");
+            dispatcher.forward(request, response);
+        }
+        catch (Exception e){}
+    }
 }
