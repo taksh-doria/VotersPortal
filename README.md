@@ -10,8 +10,7 @@ A voting portal created on ethereum blockchain by deploying smart contract on ri
   Web3j API for ethereum
   
   
- 
- #Smart Contract
+#Smart Contract
   solidity
 
 
