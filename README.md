@@ -14,10 +14,10 @@ A voting portal created on ethereum blockchain by deploying smart contract on ri
   solidity
 
 
-![Screenshot1](/Screenshot 2021-10-05 at 10.20.14 AM.png)
+![Screenshot1](/1.png)
 
-![Screenshot2](/Screenshot 2021-10-05 at 10.22.11 AM.png)
+![Screenshot2](/2.png)
 
-![Screenshot3](/Screenshot 2021-10-05 at 10.22.58 AM.png)
+![Screenshot3](/3.png)
 
-![Screenshot4](/Screenshot 2021-10-05 at 10.23.41 AM.png)
+![Screenshot4](/4.png)
